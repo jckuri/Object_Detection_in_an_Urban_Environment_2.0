@@ -28,7 +28,17 @@ I tried 2 models other than EfficientNet:
 > * Did you expect such behavior from the losses/metrics?
 > * What can you do to improve the performance of the tested models further?
 
-
+> *Improve on the initial model*
+> 
+> Most likely, this initial experiment did not yield optimal results. However, you can make multiple changes to the pipeline.config file to improve this model. One obvious change consists in improving the data augmentation strategy. The preprocessor.proto file contains the different data augmentation method available in the Tf Object Detection API. Justify your choices of augmentations in the writeup.
+> 
+> Keep in mind that the following are also available:
+> 
+> * experiment with the optimizer: type of optimizer, learning rate, scheduler etc
+> * experiment with the architecture. The Tf Object Detection API model zoo offers many architectures. Keep in mind that the pipeline.config file is unique for each architecture and you will have to edit it.
+> * visualize results on the test frames using the 2_deploy_model notebook available in this repository.
+> 
+> In the cell below, write down all the different approaches you have experimented with, why you have chosen them and what you would have done if you had more time and resources. Justify your choices using the tensorboard visualizations (take screenshots and insert them in your writeup), the metrics on the evaluation set and the generated animation you have created with this tool.
 
 ## [Model Deployment]
 
