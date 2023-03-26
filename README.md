@@ -20,7 +20,7 @@ In this current documentation, we will focus on the rubric.
 ## Choosing the best model for deployment
 
 > Write a brief summary of your experiments and suggest the best model for this problem. This should include the accuracy (mAP) values of the models you tried. Also, discuss the following:
-
+> 
 > * How does the validation loss compare to the training loss?
 > * Did you expect such behavior from the losses/metrics?
 > * What can you do to improve the performance of the tested models further?
