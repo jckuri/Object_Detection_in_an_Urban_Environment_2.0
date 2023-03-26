@@ -15,6 +15,8 @@ In this current documentation, we will focus on the rubric.
 > * Tried two models other than EfficientNet.
 > * Update and submit the `pipeline.config` file and notebooks associated with all the pretrained models.
 
+I tried 2 models other than EfficientNet:
+1. SSD MobileNet V2 FPNLite 640x640 [[Model](http://download.tensorflow.org/models/object_detection/tf2/20200711/ssd_mobilenet_v2_fpnlite_640x640_coco17_tpu-8.tar.gz)] [[Jupyter Notebook](1_model_training_SSD_MobileNet/1_train_model_SSD_MobileNet.ipynb)] [[pipeline.config](1_model_training_SSD_MobileNet/source_dir/pipeline.config)]
 
 
 ## Choosing the best model for deployment
