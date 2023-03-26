@@ -29,7 +29,7 @@ I tried 2 models other than EfficientNet:
 > * What can you do to improve the performance of the tested models further?
 
 > [INSTRUCTIONS FROM THE JUPYTER NOTEBOOK]<br/>
-> *Improve on the initial model*
+> **Improve on the initial model**
 > 
 > Most likely, this initial experiment did not yield optimal results. However, you can make multiple changes to the pipeline.config file to improve this model. One obvious change consists in improving the data augmentation strategy. The preprocessor.proto file contains the different data augmentation method available in the Tf Object Detection API. Justify your choices of augmentations in the writeup.
 > 
