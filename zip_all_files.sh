@@ -1,0 +1,1 @@
+zip -r PROJECT.ZIP . -x "**/data/*" -x "**/docker/*" -x "ExampleTensorBoard/*"
