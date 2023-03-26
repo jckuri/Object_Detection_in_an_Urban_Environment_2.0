@@ -8,7 +8,7 @@ In this current documentation, we will focus on the rubric.
 
 # RUBRIC:
 
-## Model training and Evaluation
+## [Model training and Evaluation]
 
 ## Test at least two pretrained models (other than EfficientNet)
 
@@ -27,7 +27,7 @@ In this current documentation, we will focus on the rubric.
 
 
 
-## Model Deployment
+## [Model Deployment]
 
 ## Deploy the best model and run inference.
 
