@@ -8,9 +8,11 @@ In this current documentation, we will focus on the rubric.
 
 # RUBRIC:
 
+You can click on the [rubric for the project Object Detection in an Urban Environment 2.0](https://review.udacity.com/#!/rubrics/5089/view).
+
 ## [Model training and Evaluation]
 
-## Test at least two pretrained models (other than EfficientNet)
+## 1. Test at least two pretrained models (other than EfficientNet)
 
 > * Tried two models other than EfficientNet.
 > * Update and submit the `pipeline.config` file and notebooks associated with all the pretrained models.
@@ -20,7 +22,7 @@ I tried 2 models other than EfficientNet:
 2. SSD ResNet50 V1 FPN 640x640 (RetinaNet50) [[Pretrained Model](http://download.tensorflow.org/models/object_detection/tf2/20200711/ssd_resnet50_v1_fpn_640x640_coco17_tpu-8.tar.gz)] [[Jupyter Notebook](1_model_training_RetinaNet50/1_train_model_RetinaNet50.ipynb)] [[pipeline.config](1_model_training_RetinaNet50/source_dir/pipeline.config)] [[Training Directory](1_model_training_RetinaNet50/)]
 
 
-## Choosing the best model for deployment
+## 2. Choosing the best model for deployment
 
 > Write a brief summary of your experiments and suggest the best model for this problem. This should include the accuracy (mAP) values of the models you tried. Also, discuss the following:
 > 
@@ -94,9 +96,25 @@ I0323 02:05:31.533815 140013260003136 model_lib_v2.py:1018] #011+ Loss/total_los
  Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.345
 ```
 
+**Experiment 1 - SSD MobileNet V2 FPNLite 640x640**
+
+```
+```
+
+```
+```
+
+**Experiment 2 - SSD ResNet50 V1 FPN 640x640 (RetinaNet50)**
+
+```
+```
+
+```
+```
+
 ## [Model Deployment]
 
-## Deploy the best model and run inference.
+## 3. Deploy the best model and run inference.
 
 > * Deploy the best model in AWS by completing and `running 2_deploy_model.ipynb`.
 > * Should be able to generate an output video with vehicle, pedestrian, and cyclist detections using the deployed model.
