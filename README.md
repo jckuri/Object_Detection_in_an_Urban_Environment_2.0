@@ -125,7 +125,7 @@ I0323 02:05:31.533815 140013260003136 model_lib_v2.py:1018] #011+ Loss/total_los
 
 ![IMAGES/experiment1_SSD_MobileNet/4_other.png](IMAGES/experiment1_SSD_MobileNet/4_other.png)
 
-![2_run_inference_RetinaNet50/output.gif](2_run_inference_RetinaNet50/output.gif)
+![2_run_inference_SSD_MobileNet/output.gif](2_run_inference_SSD_MobileNet/output.gif)
 
 **Experiment 2 - SSD ResNet50 V1 FPN 640x640 (RetinaNet50)**
 
@@ -143,7 +143,7 @@ I0323 02:05:31.533815 140013260003136 model_lib_v2.py:1018] #011+ Loss/total_los
 
 ![IMAGES/experiment2_RetinaNet50/4_other.png](IMAGES/experiment2_RetinaNet50/4_other.png)
 
-![2_run_inference_SSD_MobileNet/output.gif](2_run_inference_SSD_MobileNet/output.gif)
+![2_run_inference_RetinaNet50/output.gif](2_run_inference_RetinaNet50/output.gif)
 
 ## [Model Deployment]
 
