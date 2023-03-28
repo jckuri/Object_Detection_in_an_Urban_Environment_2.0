@@ -21,6 +21,9 @@ I tried 2 models other than EfficientNet:
 1. SSD MobileNet V2 FPNLite 640x640 [[Pretrained Model](http://download.tensorflow.org/models/object_detection/tf2/20200711/ssd_mobilenet_v2_fpnlite_640x640_coco17_tpu-8.tar.gz)] [[Jupyter Notebook](1_model_training_SSD_MobileNet/1_train_model_SSD_MobileNet.ipynb)] [[pipeline.config](1_model_training_SSD_MobileNet/source_dir/pipeline.config)] [[Training Directory](1_model_training_SSD_MobileNet/)]
 2. SSD ResNet50 V1 FPN 640x640 (RetinaNet50) [[Pretrained Model](http://download.tensorflow.org/models/object_detection/tf2/20200711/ssd_resnet50_v1_fpn_640x640_coco17_tpu-8.tar.gz)] [[Jupyter Notebook](1_model_training_RetinaNet50/1_train_model_RetinaNet50.ipynb)] [[pipeline.config](1_model_training_RetinaNet50/source_dir/pipeline.config)] [[Training Directory](1_model_training_RetinaNet50/)]
 
+Helpful links:
+- []()
+- []()
 
 ## 2. Choosing the best model for deployment
 
@@ -96,6 +99,14 @@ I0323 02:05:31.533815 140013260003136 model_lib_v2.py:1018] #011+ Loss/total_los
  Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.345
 ```
 
+![IMAGES/baseline_experiment/1_map_precision.png](IMAGES/baseline_experiment/1_map_precision.png)
+
+![IMAGES/baseline_experiment/2_map_recall.png](IMAGES/baseline_experiment/2_map_recall.png)
+
+![IMAGES/baseline_experiment/3_loss.png](IMAGES/baseline_experiment/3_loss.png)
+
+![IMAGES/baseline_experiment/4_other.png](IMAGES/baseline_experiment/4_other.png)
+
 **Experiment 1 - SSD MobileNet V2 FPNLite 640x640**
 
 ```
@@ -104,6 +115,14 @@ I0323 02:05:31.533815 140013260003136 model_lib_v2.py:1018] #011+ Loss/total_los
 ```
 ```
 
+![IMAGES/experiment1_SSD_MobileNet/1_map_precision.png](IMAGES/experiment1_SSD_MobileNet/1_map_precision.png)
+
+![IMAGES/experiment1_SSD_MobileNet/2_map_recall.png](IMAGES/experiment1_SSD_MobileNet/2_map_recall.png)
+
+![IMAGES/experiment1_SSD_MobileNet/3_loss.png](IMAGES/experiment1_SSD_MobileNet/3_loss.png)
+
+![IMAGES/experiment1_SSD_MobileNet/4_other.png](IMAGES/experiment1_SSD_MobileNet/4_other.png)
+
 **Experiment 2 - SSD ResNet50 V1 FPN 640x640 (RetinaNet50)**
 
 ```
@@ -111,6 +130,14 @@ I0323 02:05:31.533815 140013260003136 model_lib_v2.py:1018] #011+ Loss/total_los
 
 ```
 ```
+
+![IMAGES/experiment2_RetinaNet50/1_map_precision.png](IMAGES/experiment2_RetinaNet50/1_map_precision.png)
+
+![IMAGES/experiment2_RetinaNet50/2_map_recall.png](IMAGES/experiment2_RetinaNet50/2_map_recall.png)
+
+![IMAGES/experiment2_RetinaNet50/3_loss.png](IMAGES/experiment2_RetinaNet50/3_loss.png)
+
+![IMAGES/experiment2_RetinaNet50/4_other.png](IMAGES/experiment2_RetinaNet50/4_other.png)
 
 ## [Model Deployment]
 
