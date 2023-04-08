@@ -113,6 +113,8 @@ I0323 02:05:31.533815 140013260003136 model_lib_v2.py:1018] #011+ Loss/total_los
 
 ![2_run_inference/output.gif](2_run_inference/output.gif)
 
+[Video file output.avi](2_run_inference/output.avi)
+
 **Experiment 1 - SSD MobileNet V2 FPNLite 640x640**
 
 [[Jupyter Notebook](1_model_training_SSD_MobileNet/1_train_model_SSD_MobileNet.ipynb)]
@@ -180,6 +182,8 @@ I0328 06:47:53.297557 139632741836608 model_lib_v2.py:1018] #011+ Loss/total_los
 
 ![2_run_inference_SSD_MobileNet/output.gif](2_run_inference_SSD_MobileNet/output.gif)
 
+[Video file output.avi](2_run_inference_SSD_MobileNet/output.avi)
+
 **Experiment 2 - SSD ResNet50 V1 FPN 640x640 (RetinaNet50)**
 
 [[Jupyter Notebook](1_model_training_RetinaNet50/1_train_model_RetinaNet50.ipynb)]
@@ -246,6 +250,8 @@ I0328 03:26:05.247700 139873701160768 model_lib_v2.py:1018] #011+ Loss/total_los
 ![IMAGES/experiment2_RetinaNet50/4_other.png](IMAGES/experiment2_RetinaNet50/4_other.png)
 
 ![2_run_inference_RetinaNet50/output.gif](2_run_inference_RetinaNet50/output.gif)
+
+[Video file output.avi](2_run_inference_RetinaNet50/output.avi)
 
 ## [Model Deployment]
 
