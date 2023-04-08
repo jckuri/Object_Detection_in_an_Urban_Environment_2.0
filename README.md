@@ -48,6 +48,8 @@ Helpful links:
 
 **Baseline Experiment - EfficientDet D1 640x640**
 
+[[Jupyter Notebook](1_model_training/1_train_model.ipynb)]
+
 ```
 I0323 02:05:31.501080 140013260003136 model_lib_v2.py:1015] Eval metrics at step 2000
 INFO:tensorflow:#011+ DetectionBoxes_Precision/mAP: 0.079465
@@ -111,6 +113,8 @@ I0323 02:05:31.533815 140013260003136 model_lib_v2.py:1018] #011+ Loss/total_los
 
 **Experiment 1 - SSD MobileNet V2 FPNLite 640x640**
 
+[[Jupyter Notebook](1_model_training_SSD_MobileNet/1_train_model_SSD_MobileNet.ipynb)]
+
 ```
 ```
 
@@ -128,6 +132,8 @@ I0323 02:05:31.533815 140013260003136 model_lib_v2.py:1018] #011+ Loss/total_los
 ![2_run_inference_SSD_MobileNet/output.gif](2_run_inference_SSD_MobileNet/output.gif)
 
 **Experiment 2 - SSD ResNet50 V1 FPN 640x640 (RetinaNet50)**
+
+[[Jupyter Notebook](1_model_training_RetinaNet50/1_train_model_RetinaNet50.ipynb)]
 
 ```
 ```
