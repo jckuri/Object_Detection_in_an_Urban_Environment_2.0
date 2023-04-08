@@ -22,8 +22,9 @@ I tried 2 models other than EfficientNet:
 2. SSD ResNet50 V1 FPN 640x640 (RetinaNet50) [[Pretrained Model](http://download.tensorflow.org/models/object_detection/tf2/20200711/ssd_resnet50_v1_fpn_640x640_coco17_tpu-8.tar.gz)] [[Jupyter Notebook](1_model_training_RetinaNet50/1_train_model_RetinaNet50.ipynb)] [[pipeline.config](1_model_training_RetinaNet50/source_dir/pipeline.config)] [[Training Directory](1_model_training_RetinaNet50/)]
 
 Helpful links:
-- []()
-- []()
+- [Training and deploying models using TensorFlow 2 with the Object Detection API on Amazon SageMaker](https://aws.amazon.com/blogs/machine-learning/training-and-deploying-models-using-tensorflow-2-with-the-object-detection-api-on-amazon-sagemaker/)
+- [TensorFlow 2 Detection Model Zoo](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/tf2_detection_zoo.md)
+- [Configuration Files of the Detection Models](https://github.com/tensorflow/models/tree/master/research/object_detection/configs/tf2)
 
 ## 2. Choosing the best model for deployment
 
@@ -42,7 +43,7 @@ Helpful links:
 > 
 > * experiment with the optimizer: type of optimizer, learning rate, scheduler etc
 > * experiment with the architecture. The Tf Object Detection API model zoo offers many architectures. Keep in mind that the pipeline.config file is unique for each architecture and you will have to edit it.
-> * visualize results on the test frames using the 2_deploy_model notebook available in this repository.
+> * visualize results on the test frames using the `2_deploy_model` notebook available in this repository.
 > 
 > In the cell below, write down all the different approaches you have experimented with, why you have chosen them and what you would have done if you had more time and resources. Justify your choices using the tensorboard visualizations (take screenshots and insert them in your writeup), the metrics on the evaluation set and the generated animation you have created with this tool.
 
