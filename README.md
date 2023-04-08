@@ -50,6 +50,7 @@ Helpful links:
 **Baseline Experiment - EfficientDet D1 640x640**
 
 [[Jupyter Notebook](1_model_training/1_train_model.ipynb)]
+[[pipeline.config](1_model_training/source_dir/pipeline.config)]
 
 ```
 I0323 02:05:31.501080 140013260003136 model_lib_v2.py:1015] Eval metrics at step 2000
@@ -115,6 +116,7 @@ I0323 02:05:31.533815 140013260003136 model_lib_v2.py:1018] #011+ Loss/total_los
 **Experiment 1 - SSD MobileNet V2 FPNLite 640x640**
 
 [[Jupyter Notebook](1_model_training_SSD_MobileNet/1_train_model_SSD_MobileNet.ipynb)]
+[[pipeline.config](1_model_training_SSD_MobileNet/source_dir/pipeline.config)]
 
 ```
 INFO:tensorflow:Eval metrics at step 10000
@@ -181,6 +183,7 @@ I0328 06:47:53.297557 139632741836608 model_lib_v2.py:1018] #011+ Loss/total_los
 **Experiment 2 - SSD ResNet50 V1 FPN 640x640 (RetinaNet50)**
 
 [[Jupyter Notebook](1_model_training_RetinaNet50/1_train_model_RetinaNet50.ipynb)]
+[[pipeline.config](1_model_training_RetinaNet50/source_dir/pipeline.config)]
 
 ```
 INFO:tensorflow:Eval metrics at step 10000
