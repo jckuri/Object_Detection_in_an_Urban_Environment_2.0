@@ -116,9 +116,55 @@ I0323 02:05:31.533815 140013260003136 model_lib_v2.py:1018] #011+ Loss/total_los
 [[Jupyter Notebook](1_model_training_SSD_MobileNet/1_train_model_SSD_MobileNet.ipynb)]
 
 ```
+INFO:tensorflow:Eval metrics at step 10000
+I0328 06:47:53.264510 139632741836608 model_lib_v2.py:1015] Eval metrics at step 10000
+INFO:tensorflow:#011+ DetectionBoxes_Precision/mAP: 0.127604
+I0328 06:47:53.275685 139632741836608 model_lib_v2.py:1018] #011+ DetectionBoxes_Precision/mAP: 0.127604
+INFO:tensorflow:#011+ DetectionBoxes_Precision/mAP@.50IOU: 0.262165
+I0328 06:47:53.277360 139632741836608 model_lib_v2.py:1018] #011+ DetectionBoxes_Precision/mAP@.50IOU: 0.262165
+INFO:tensorflow:#011+ DetectionBoxes_Precision/mAP@.75IOU: 0.109342
+I0328 06:47:53.278857 139632741836608 model_lib_v2.py:1018] #011+ DetectionBoxes_Precision/mAP@.75IOU: 0.109342
+INFO:tensorflow:#011+ DetectionBoxes_Precision/mAP (small): 0.053764
+I0328 06:47:53.280415 139632741836608 model_lib_v2.py:1018] #011+ DetectionBoxes_Precision/mAP (small): 0.053764
+INFO:tensorflow:#011+ DetectionBoxes_Precision/mAP (medium): 0.435959
+I0328 06:47:53.281942 139632741836608 model_lib_v2.py:1018] #011+ DetectionBoxes_Precision/mAP (medium): 0.435959
+INFO:tensorflow:#011+ DetectionBoxes_Precision/mAP (large): 0.556335
+I0328 06:47:53.283474 139632741836608 model_lib_v2.py:1018] #011+ DetectionBoxes_Precision/mAP (large): 0.556335
+INFO:tensorflow:#011+ DetectionBoxes_Recall/AR@1: 0.028387
+I0328 06:47:53.285100 139632741836608 model_lib_v2.py:1018] #011+ DetectionBoxes_Recall/AR@1: 0.028387
+INFO:tensorflow:#011+ DetectionBoxes_Recall/AR@10: 0.129599
+I0328 06:47:53.286616 139632741836608 model_lib_v2.py:1018] #011+ DetectionBoxes_Recall/AR@10: 0.129599
+INFO:tensorflow:#011+ DetectionBoxes_Recall/AR@100: 0.183234
+I0328 06:47:53.288196 139632741836608 model_lib_v2.py:1018] #011+ DetectionBoxes_Recall/AR@100: 0.183234
+INFO:tensorflow:#011+ DetectionBoxes_Recall/AR@100 (small): 0.117098
+I0328 06:47:53.289684 139632741836608 model_lib_v2.py:1018] #011+ DetectionBoxes_Recall/AR@100 (small): 0.117098
+INFO:tensorflow:#011+ DetectionBoxes_Recall/AR@100 (medium): 0.515716
+I0328 06:47:53.291176 139632741836608 model_lib_v2.py:1018] #011+ DetectionBoxes_Recall/AR@100 (medium): 0.515716
+INFO:tensorflow:#011+ DetectionBoxes_Recall/AR@100 (large): 0.651331
+I0328 06:47:53.292778 139632741836608 model_lib_v2.py:1018] #011+ DetectionBoxes_Recall/AR@100 (large): 0.651331
+INFO:tensorflow:#011+ Loss/localization_loss: 0.418279
+I0328 06:47:53.293933 139632741836608 model_lib_v2.py:1018] #011+ Loss/localization_loss: 0.418279
+INFO:tensorflow:#011+ Loss/classification_loss: 0.305893
+I0328 06:47:53.295172 139632741836608 model_lib_v2.py:1018] #011+ Loss/classification_loss: 0.305893
+INFO:tensorflow:#011+ Loss/regularization_loss: 0.116482
+I0328 06:47:53.296380 139632741836608 model_lib_v2.py:1018] #011+ Loss/regularization_loss: 0.116482
+INFO:tensorflow:#011+ Loss/total_loss: 0.840655
+I0328 06:47:53.297557 139632741836608 model_lib_v2.py:1018] #011+ Loss/total_loss: 0.840655
 ```
 
 ```
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.128
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.262
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.109
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.054
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.436
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.556
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.028
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.130
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.183
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.117
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.516
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.651
 ```
 
 ![IMAGES/experiment1_SSD_MobileNet/1_map_precision.png](IMAGES/experiment1_SSD_MobileNet/1_map_precision.png)
@@ -136,9 +182,55 @@ I0323 02:05:31.533815 140013260003136 model_lib_v2.py:1018] #011+ Loss/total_los
 [[Jupyter Notebook](1_model_training_RetinaNet50/1_train_model_RetinaNet50.ipynb)]
 
 ```
+INFO:tensorflow:Eval metrics at step 10000
+I0328 03:26:05.216826 139873701160768 model_lib_v2.py:1015] Eval metrics at step 10000
+INFO:tensorflow:#011+ DetectionBoxes_Precision/mAP: 0.137720
+I0328 03:26:05.228162 139873701160768 model_lib_v2.py:1018] #011+ DetectionBoxes_Precision/mAP: 0.137720
+INFO:tensorflow:#011+ DetectionBoxes_Precision/mAP@.50IOU: 0.265962
+I0328 03:26:05.229598 139873701160768 model_lib_v2.py:1018] #011+ DetectionBoxes_Precision/mAP@.50IOU: 0.265962
+INFO:tensorflow:#011+ DetectionBoxes_Precision/mAP@.75IOU: 0.124488
+I0328 03:26:05.231010 139873701160768 model_lib_v2.py:1018] #011+ DetectionBoxes_Precision/mAP@.75IOU: 0.124488
+INFO:tensorflow:#011+ DetectionBoxes_Precision/mAP (small): 0.057460
+I0328 03:26:05.232390 139873701160768 model_lib_v2.py:1018] #011+ DetectionBoxes_Precision/mAP (small): 0.057460
+INFO:tensorflow:#011+ DetectionBoxes_Precision/mAP (medium): 0.479444
+I0328 03:26:05.233793 139873701160768 model_lib_v2.py:1018] #011+ DetectionBoxes_Precision/mAP (medium): 0.479444
+INFO:tensorflow:#011+ DetectionBoxes_Precision/mAP (large): 0.554146
+I0328 03:26:05.235203 139873701160768 model_lib_v2.py:1018] #011+ DetectionBoxes_Precision/mAP (large): 0.554146
+INFO:tensorflow:#011+ DetectionBoxes_Recall/AR@1: 0.029238
+I0328 03:26:05.236585 139873701160768 model_lib_v2.py:1018] #011+ DetectionBoxes_Recall/AR@1: 0.029238
+INFO:tensorflow:#011+ DetectionBoxes_Recall/AR@10: 0.135522
+I0328 03:26:05.237928 139873701160768 model_lib_v2.py:1018] #011+ DetectionBoxes_Recall/AR@10: 0.135522
+INFO:tensorflow:#011+ DetectionBoxes_Recall/AR@100: 0.195034
+I0328 03:26:05.239308 139873701160768 model_lib_v2.py:1018] #011+ DetectionBoxes_Recall/AR@100: 0.195034
+INFO:tensorflow:#011+ DetectionBoxes_Recall/AR@100 (small): 0.126034
+I0328 03:26:05.240660 139873701160768 model_lib_v2.py:1018] #011+ DetectionBoxes_Recall/AR@100 (small): 0.126034
+INFO:tensorflow:#011+ DetectionBoxes_Recall/AR@100 (medium): 0.543198
+I0328 03:26:05.242003 139873701160768 model_lib_v2.py:1018] #011+ DetectionBoxes_Recall/AR@100 (medium): 0.543198
+INFO:tensorflow:#011+ DetectionBoxes_Recall/AR@100 (large): 0.708365
+I0328 03:26:05.243425 139873701160768 model_lib_v2.py:1018] #011+ DetectionBoxes_Recall/AR@100 (large): 0.708365
+INFO:tensorflow:#011+ Loss/localization_loss: 0.358813
+I0328 03:26:05.244471 139873701160768 model_lib_v2.py:1018] #011+ Loss/localization_loss: 0.358813
+INFO:tensorflow:#011+ Loss/classification_loss: 0.397361
+I0328 03:26:05.245524 139873701160768 model_lib_v2.py:1018] #011+ Loss/classification_loss: 0.397361
+INFO:tensorflow:#011+ Loss/regularization_loss: 0.122182
+I0328 03:26:05.246578 139873701160768 model_lib_v2.py:1018] #011+ Loss/regularization_loss: 0.122182
+INFO:tensorflow:#011+ Loss/total_loss: 0.878356
+I0328 03:26:05.247700 139873701160768 model_lib_v2.py:1018] #011+ Loss/total_loss: 0.878356
 ```
 
 ```
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.138
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.266
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.124
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.057
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.479
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.554
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.029
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.136
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.195
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.126
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.543
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.708
 ```
 
 ![IMAGES/experiment2_RetinaNet50/1_map_precision.png](IMAGES/experiment2_RetinaNet50/1_map_precision.png)
