@@ -48,6 +48,13 @@ Helpful links:
 > 
 > In the cell below, write down all the different approaches you have experimented with, why you have chosen them and what you would have done if you had more time and resources. Justify your choices using the tensorboard visualizations (take screenshots and insert them in your writeup), the metrics on the evaluation set and the generated animation you have created with this tool.
 
+### AWS Costs
+
+First off, I spent US$216 in Amazon Web Services when I was searching for the best models possible.
+So, please consider this factor when grading the rubric.
+
+![Cost](IMAGES/AWS_March_2023.png)
+
 ### Baseline Experiment - EfficientDet D1 640x640
 
 [[Jupyter Notebook](1_model_training/1_train_model.ipynb)]
