@@ -273,6 +273,21 @@ This is how Udacity GPT defines AP, AR, and mAP:
 > The range of values for the mean average precision (mAP) is between 0 and 1. A value of 0 means that the model did not detect any objects correctly, while a value of 1 means that the model detected all objects correctly.
 
 
+[EfficientDet D1](#baseline-experiment---efficientdet-d1-640x640)
+
+[MobileNet V2](#experiment-1---ssd-mobilenet-v2-fpnlite-640x640)
+
+[RetinaNet50](#experiment-2---ssd-resnet50-v1-fpn-640x640-retinanet50)
+
+When comparing the values of mAP, AP, AR, and Loss in the validation dataset,
+we obtain the following results and the places obtained by each model: 1st, 2nd, and 3rd places.
+
+| Model                                                                  | mAP  | AP  | AR  | Loss |
+| ---------------------------------------------------------------------- | ---- | --- | --- | ---- |
+| [EfficientDet D1](#baseline-experiment---efficientdet-d1-640x640)      | 3rd  | 3rd | 3rd | 1st  |
+| [MobileNet V2](#experiment-1---ssd-mobilenet-v2-fpnlite-640x640)       | 2nd  | 2nd | 2nd | 3rd  |
+| [RetinaNet50](#experiment-2---ssd-resnet50-v1-fpn-640x640-retinanet50) | 1st  | 1st | 1st | 2nd  |
+
 
 ## [Model Deployment]
 
