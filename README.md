@@ -130,6 +130,99 @@ Jupyter Notebook [2_deploy_model.ipynb](2_run_inference/2_deploy_model.ipynb)
 [[Jupyter Notebook](1_model_training_SSD_MobileNet/1_train_model_SSD_MobileNet.ipynb)]
 [[pipeline.config](1_model_training_SSD_MobileNet/source_dir/pipeline.config)]
 
+In the experiment 1, I used the pretrained model `SSD MobileNet V2 FPNLite 640x640`.
+
+I used many data augmentation strategies:
+- `random_horizontal_flip`
+- `random_adjust_brightness`
+- `random_adjust_contrast`
+- `random_adjust_hue`
+- `random_adjust_saturation`
+- `random_image_scale`
+- `random_rgb_to_gray`
+
+I also changed `batch_size` to `8` and `num_steps` to `10000`.
+
+I used the Adam optimizer with a `initial_learning_rate` of `0.0005`.
+And I changed the learning rate to `0.0001` at step `2500`, `0.00005` at step `5000`, and `0.00001` at step `7500`.
+
+```
+train_config: {
+  fine_tune_checkpoint_version: V2
+  fine_tune_checkpoint: "checkpoint/ckpt-0"
+  fine_tune_checkpoint_type: "detection"
+  batch_size: 8
+  sync_replicas: true
+  startup_delay_steps: 0
+  replicas_to_aggregate: 8
+  num_steps: 10000
+  data_augmentation_options {
+    random_horizontal_flip {
+      probability: 0.5
+    }
+  }
+  data_augmentation_options {
+    random_adjust_brightness {
+      max_delta: 0.2
+    }
+  }
+  data_augmentation_options {
+    random_adjust_contrast {
+      min_delta: 0.7
+      max_delta: 1.1
+    }
+  }
+  data_augmentation_options {
+    random_adjust_hue {
+      max_delta: 0.01
+    }
+  }
+  data_augmentation_options {
+    random_adjust_saturation {
+      min_delta: 0.75
+      max_delta: 1.15
+    }
+  }
+  data_augmentation_options {
+    random_image_scale {
+      min_scale_ratio: 0.8
+      max_scale_ratio: 2.2
+    }
+  }
+  data_augmentation_options {
+    random_rgb_to_gray {
+      probability: 0.3
+    }
+  }
+  optimizer {
+    adam_optimizer: {
+      learning_rate: {
+        manual_step_learning_rate {
+          initial_learning_rate: .0005
+          schedule {
+            step: 2500
+            learning_rate: .0001
+          }
+          schedule {
+            step: 5000
+            learning_rate: .00005
+          }
+          schedule {
+            step: 7500
+            learning_rate: .00001
+          }
+        }
+      }
+    }
+    use_moving_average: false
+  }
+  max_number_of_boxes: 100
+  unpad_groundtruth_tensors: false
+}
+```
+
+And by doing this, I improved some results:
+
 ```
 INFO:tensorflow:Eval metrics at step 10000
 I0328 06:47:53.264510 139632741836608 model_lib_v2.py:1015] Eval metrics at step 10000
@@ -201,6 +294,100 @@ Jupyter Notebook [2_deploy_model_SSD_MobileNet.ipynb](2_run_inference_SSD_Mobile
 [[Jupyter Notebook](1_model_training_RetinaNet50/1_train_model_RetinaNet50.ipynb)]
 [[pipeline.config](1_model_training_RetinaNet50/source_dir/pipeline.config)]
 
+In the experiment 1, I used the pretrained model `SSD ResNet50 V1 FPN 640x640 (RetinaNet50)`.
+
+I used many data augmentation strategies:
+- `random_horizontal_flip`
+- `random_adjust_brightness`
+- `random_adjust_contrast`
+- `random_adjust_hue`
+- `random_adjust_saturation`
+- `random_image_scale`
+- `random_rgb_to_gray`
+
+I also changed `batch_size` to `8` and `num_steps` to `10000`.
+
+I used the Adam optimizer with a `initial_learning_rate` of `0.0005`.
+And I changed the learning rate to `0.0001` at step `2500`, `0.00005` at step `5000`, and `0.00001` at step `7500`.
+
+```
+train_config: {
+  fine_tune_checkpoint_version: V2
+  fine_tune_checkpoint: "checkpoint/ckpt-0"
+  fine_tune_checkpoint_type: "detection"
+  batch_size: 8
+  sync_replicas: true
+  startup_delay_steps: 0
+  replicas_to_aggregate: 8
+  use_bfloat16: true
+  num_steps: 10000
+  data_augmentation_options {
+    random_horizontal_flip {
+      probability: 0.5
+    }
+  }
+  data_augmentation_options {
+    random_adjust_brightness {
+      max_delta: 0.2
+    }
+  }
+  data_augmentation_options {
+    random_adjust_contrast {
+      min_delta: 0.7
+      max_delta: 1.1
+    }
+  }
+  data_augmentation_options {
+    random_adjust_hue {
+      max_delta: 0.01
+    }
+  }
+  data_augmentation_options {
+    random_adjust_saturation {
+      min_delta: 0.75
+      max_delta: 1.15
+    }
+  }
+  data_augmentation_options {
+    random_image_scale {
+      min_scale_ratio: 0.8
+      max_scale_ratio: 2.2
+    }
+  }
+  data_augmentation_options {
+    random_rgb_to_gray {
+      probability: 0.3
+    }
+  }
+  optimizer {
+    adam_optimizer: {
+      learning_rate: {
+        manual_step_learning_rate {
+          initial_learning_rate: .0005
+          schedule {
+            step: 2500
+            learning_rate: .0001
+          }
+          schedule {
+            step: 5000
+            learning_rate: .00005
+          }
+          schedule {
+            step: 7500
+            learning_rate: .00001
+          }
+        }
+      }
+    }
+    use_moving_average: false
+  }
+  max_number_of_boxes: 100
+  unpad_groundtruth_tensors: false
+}
+```
+
+And by doing this, I improved some results:
+
 ```
 INFO:tensorflow:Eval metrics at step 10000
 I0328 03:26:05.216826 139873701160768 model_lib_v2.py:1015] Eval metrics at step 10000
@@ -270,6 +457,10 @@ Jupyter Notebook [2_deploy_model_RetinaNet50.ipynb](2_run_inference_RetinaNet50/
 ### Questions
 
 #### How does the validation loss compare to the training loss?
+
+![IMAGES/baseline_experiment/3_loss.png](IMAGES/baseline_experiment/3_loss.png)
+
+![IMAGES/experiment2_RetinaNet50/3_loss.png](IMAGES/experiment2_RetinaNet50/3_loss.png)
 
 #### Did you expect such behavior from the losses/metrics?
 
