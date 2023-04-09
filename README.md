@@ -267,6 +267,15 @@ I0328 03:26:05.247700 139873701160768 model_lib_v2.py:1018] #011+ Loss/total_los
 
 Jupyter Notebook [2_deploy_model_RetinaNet50.ipynb](2_run_inference_RetinaNet50/2_deploy_model_RetinaNet50.ipynb)
 
+### Questions
+
+#### How does the validation loss compare to the training loss?
+
+#### Did you expect such behavior from the losses/metrics?
+
+#### What can you do to improve the performance of the tested models further?
+
+
 ### Model Selection
 
 This is how Udacity GPT defines AP, AR, and mAP:
