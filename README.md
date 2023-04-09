@@ -116,6 +116,8 @@ I0323 02:05:31.533815 140013260003136 model_lib_v2.py:1018] #011+ Loss/total_los
 
 [Video file output.avi](2_run_inference/output.avi)
 
+Jupyter Notebook [2_deploy_model.ipynb](2_run_inference/2_deploy_model.ipynb)
+
 ### Experiment 1 - SSD MobileNet V2 FPNLite 640x640
 
 [[Jupyter Notebook](1_model_training_SSD_MobileNet/1_train_model_SSD_MobileNet.ipynb)]
@@ -184,6 +186,8 @@ I0328 06:47:53.297557 139632741836608 model_lib_v2.py:1018] #011+ Loss/total_los
 ![2_run_inference_SSD_MobileNet/output.gif](2_run_inference_SSD_MobileNet/output.gif)
 
 [Video file output.avi](2_run_inference_SSD_MobileNet/output.avi)
+
+Jupyter Notebook [2_deploy_model_SSD_MobileNet.ipynb](2_run_inference_SSD_MobileNet/2_deploy_model_SSD_MobileNet.ipynb)
 
 ### Experiment 2 - SSD ResNet50 V1 FPN 640x640 (RetinaNet50)
 
@@ -254,6 +258,8 @@ I0328 03:26:05.247700 139873701160768 model_lib_v2.py:1018] #011+ Loss/total_los
 
 [Video file output.avi](2_run_inference_RetinaNet50/output.avi)
 
+Jupyter Notebook [2_deploy_model_RetinaNet50.ipynb](2_run_inference_RetinaNet50/2_deploy_model_RetinaNet50.ipynb)
+
 ### Model Selection
 
 This is how Udacity GPT defines AP, AR, and mAP:
@@ -298,7 +304,7 @@ Therefore, I selected [RetinaNet50](#experiment-2---ssd-resnet50-v1-fpn-640x640-
 
 I selected [RetinaNet50](#experiment-2---ssd-resnet50-v1-fpn-640x640-retinanet50) for model deployment.
 
-And here is the Jupyter Notebook [[2_deploy_model_RetinaNet50.ipynb](2_run_inference_RetinaNet50/2_deploy_model_RetinaNet50.ipynb)]
+And here is the Jupyter Notebook [2_deploy_model_RetinaNet50.ipynb](2_run_inference_RetinaNet50/2_deploy_model_RetinaNet50.ipynb)
 
 ![2_run_inference_RetinaNet50/output.gif](2_run_inference_RetinaNet50/output.gif)
 
