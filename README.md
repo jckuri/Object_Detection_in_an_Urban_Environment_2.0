@@ -25,6 +25,7 @@ Helpful links:
 - [Training and deploying models using TensorFlow 2 with the Object Detection API on Amazon SageMaker](https://aws.amazon.com/blogs/machine-learning/training-and-deploying-models-using-tensorflow-2-with-the-object-detection-api-on-amazon-sagemaker/)
 - [TensorFlow 2 Detection Model Zoo](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/tf2_detection_zoo.md)
 - [Configuration Files of the Detection Models](https://github.com/tensorflow/models/tree/master/research/object_detection/configs/tf2)
+- [Object Detection in an Urban Environment](https://learn.udacity.com/paid-courses/cd2688)
 
 ## 2. Choosing the best model for deployment
 
@@ -47,7 +48,7 @@ Helpful links:
 > 
 > In the cell below, write down all the different approaches you have experimented with, why you have chosen them and what you would have done if you had more time and resources. Justify your choices using the tensorboard visualizations (take screenshots and insert them in your writeup), the metrics on the evaluation set and the generated animation you have created with this tool.
 
-**Baseline Experiment - EfficientDet D1 640x640**
+### Baseline Experiment - EfficientDet D1 640x640
 
 [[Jupyter Notebook](1_model_training/1_train_model.ipynb)]
 [[pipeline.config](1_model_training/source_dir/pipeline.config)]
@@ -115,7 +116,7 @@ I0323 02:05:31.533815 140013260003136 model_lib_v2.py:1018] #011+ Loss/total_los
 
 [Video file output.avi](2_run_inference/output.avi)
 
-**Experiment 1 - SSD MobileNet V2 FPNLite 640x640**
+### Experiment 1 - SSD MobileNet V2 FPNLite 640x640
 
 [[Jupyter Notebook](1_model_training_SSD_MobileNet/1_train_model_SSD_MobileNet.ipynb)]
 [[pipeline.config](1_model_training_SSD_MobileNet/source_dir/pipeline.config)]
@@ -184,7 +185,7 @@ I0328 06:47:53.297557 139632741836608 model_lib_v2.py:1018] #011+ Loss/total_los
 
 [Video file output.avi](2_run_inference_SSD_MobileNet/output.avi)
 
-**Experiment 2 - SSD ResNet50 V1 FPN 640x640 (RetinaNet50)**
+### Experiment 2 - SSD ResNet50 V1 FPN 640x640 (RetinaNet50)
 
 [[Jupyter Notebook](1_model_training_RetinaNet50/1_train_model_RetinaNet50.ipynb)]
 [[pipeline.config](1_model_training_RetinaNet50/source_dir/pipeline.config)]
@@ -252,6 +253,26 @@ I0328 03:26:05.247700 139873701160768 model_lib_v2.py:1018] #011+ Loss/total_los
 ![2_run_inference_RetinaNet50/output.gif](2_run_inference_RetinaNet50/output.gif)
 
 [Video file output.avi](2_run_inference_RetinaNet50/output.avi)
+
+### Model Selection
+
+This is how Udacity GPT defines AP, AR, and mAP:
+
+> In the context of object detection, AP and AR are two important metrics used to evaluate the performance of object detection models.
+> 
+> AP stands for Average Precision, and it is a measure of how well the model is able to detect objects in an image. AP is calculated by computing the precision and recall values for each predicted object, and then taking the average of the precision values at different recall levels.
+> 
+> AR stands for Average Recall, and it is a measure of how well the model is able to detect all objects in an image. AR is calculated by computing the precision and recall values for each ground truth object, and then taking the average of the recall values at different precision levels.
+> 
+> Both AP and AR are important metrics for evaluating object detection models. AP measures how well the model is able to detect objects, while AR measures how well the model is able to detect all objects in an image.
+> 
+> It's important to note that AP and AR are related but not the same. A model with high AP may not necessarily have high AR, and vice versa.
+> 
+> To calculate mAP, we first calculate the precision and recall values for each predicted object. Then, we plot a precision-recall curve and calculate the area under the curve (AUC). This area gives us the mAP value.
+> 
+> The range of values for the mean average precision (mAP) is between 0 and 1. A value of 0 means that the model did not detect any objects correctly, while a value of 1 means that the model detected all objects correctly.
+
+
 
 ## [Model Deployment]
 
