@@ -491,7 +491,7 @@ https://github.com/tensorflow/models/blob/master/research/object_detection/proto
 
 By using Keras, it is easier to use the Adam optimizer properly.
 
-tf.keras.optimizers.Adam
+tf.keras.optimizers.Adam<br/>
 https://www.tensorflow.org/api_docs/python/tf/keras/optimizers/Adam
 
 By using Keras instead of the file `pipeline.config`, we can also use an
