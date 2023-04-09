@@ -520,7 +520,7 @@ This is how Udacity GPT defines AP, AR, and mAP:
 
 
 When comparing the values of mAP, AP, AR, and Loss in the validation dataset,
-I obtained the following results by each model: 1st, 2nd, and 3rd places.
+I obtained the following results for each model: 1st, 2nd, and 3rd places.
 I also compared the videos of each model.
 
 | Model                                                                  | mAP  | AP  | AR  | Loss | Video |
