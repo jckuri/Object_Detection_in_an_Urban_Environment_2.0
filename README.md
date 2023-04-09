@@ -458,14 +458,47 @@ Jupyter Notebook [2_deploy_model_RetinaNet50.ipynb](2_run_inference_RetinaNet50/
 
 #### How does the validation loss compare to the training loss?
 
+The baseline experiment clearly has a better validation loss than experiment 1 and experiment 2 do.
+The training losses of experiment 1 and experiment 2 are lower than the training loss of the baseline experiment.
+This clearly indicates that both experiment 1 and experiment 2 have overfitting.
+However, the other metrics (mAP, AP, and AR) and the video are better in the experiment 2.
+
+Training and validation losses in the baseline experiment `EfficientDet D1`:
 ![IMAGES/baseline_experiment/3_loss.png](IMAGES/baseline_experiment/3_loss.png)
 
+Training and validation losses in the experiment 1 `MobileNet V2`:
+![IMAGES/experiment1_SSD_MobileNet/3_loss.png](IMAGES/experiment1_SSD_MobileNet/3_loss.png)
+
+Training and validation losses in the experiment 2 `RetinaNet50`:
 ![IMAGES/experiment2_RetinaNet50/3_loss.png](IMAGES/experiment2_RetinaNet50/3_loss.png)
 
 #### Did you expect such behavior from the losses/metrics?
 
+No. I didn't expect having overfitting in experiment 1 and experiment 2.
+Why? Because I augmented the dataset with many image transformations in order to
+make the pattern recognizer more robust to variances and to extrapolate better to
+new unseen patterns.
+
 #### What can you do to improve the performance of the tested models further?
 
+Perhaps I'm not using the Adam optimizer in the correct way.
+Normally, one should use the Adam optimizer without specifying learning rates through time.
+Because the Adam optimizer is supposed to adapt the learning rates of each parameter in
+a separate way. However, the documentation is not clear of how to do it correctly by
+using the file `pipeline.config`. There are limited options:
+
+https://github.com/tensorflow/models/blob/master/research/object_detection/protos/optimizer.proto
+
+By using Keras, it is easier to use the Adam optimizer properly.
+
+tf.keras.optimizers.Adam
+https://www.tensorflow.org/api_docs/python/tf/keras/optimizers/Adam
+
+By using Keras instead of the file `pipeline.config`, we can also use an
+early stopping strategy to avoid overfitting.
+
+If I had had more time, I would have studied the AWS SageMaker documentation in a better way.
+Perhaps that's my real problem.
 
 ### Model Selection
 
